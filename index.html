@@ -172,6 +172,52 @@
 
     <section class="section">
         <div class="container is-max-desktop">
+            <h2 class="title is-4">Real World</h2>
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="content">
+                        <p style="color:rgb(147, 36, 36);">
+                            To demonstrate the effectiveness of SAM-E in real-world scenarios, 
+                            we train and test the model in a real-world setup with a Franka Panda robot arm in the real world. 
+                            As shown in the Figure, we train SAM-E in 5 tasks with 10 demonstrations per task, including Put the towel on the cabinet, Stack the block, Close the drawer, Pick up the banana, and Put the orange into the drawer.
+                            See the videos below for the results. This is the <a href="https://drive.google.com/drive/folders/1Kwe-yQbacW9LT10hzJ5NwmSFDywloUst?usp=drive_link">link</a> to the collected real-device data samples.
+
+                        </p>
+                    </div>
+                    <div class="content" style="margin-top: 30px;">
+                        <img src="./static/images/realworld.png" alt="" srcset="" />
+                    </div>
+                    <div class="columns is-centered">
+                        <div class="column">
+                            <div class="content">
+                                <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+                                    <source src="./static/video/real_world/pick_orange.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+                                </video>
+                                <p>
+                                    <font color="#76B900"><b>Success</b></font>: Put the orange into the drawer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%" onloadstart="this.playbackRate=2">
+                                    <source src="./static/video/real_world/pick_banana.mp4" type="video/mp4" class="figure-img img-fluid rounded">
+                                </video>
+                                <p>
+                                    <font color="#76B900"><b>Success</b></font>: Put the banana in the basket
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section class="section">
+        <div class="container is-max-desktop">
             <h2 class="title is-4">Multi-task Videos</h2>
 
             <h2 class="title is-5">Put in Drawer</h2>
